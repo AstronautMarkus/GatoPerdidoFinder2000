@@ -22,6 +22,7 @@ namespace CppCLRWinFormsProject {
 			//
 			//TODO: Add the constructor code here
 			//
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen; // Centra el formulario al abrirse.
 		}
 
 	protected:
