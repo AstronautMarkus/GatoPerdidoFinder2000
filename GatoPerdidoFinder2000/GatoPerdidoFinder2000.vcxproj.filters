@@ -29,6 +29,9 @@
     <ClInclude Include="Form1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MenuGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -41,6 +44,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Form1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
