@@ -87,8 +87,11 @@ namespace CppCLRWinFormsProject {
 			this->ExitBtn = (gcnew System::Windows::Forms::Button());
 			this->Credits = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
+			// 
+			// PlayBtn
+			// 
 			this->PlayBtn->BackColor = System::Drawing::SystemColors::Control;
-			this->PlayBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->PlayBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->PlayBtn->Location = System::Drawing::Point(261, 326);
 			this->PlayBtn->Name = L"PlayBtn";
@@ -96,8 +99,11 @@ namespace CppCLRWinFormsProject {
 			this->PlayBtn->TabIndex = 0;
 			this->PlayBtn->Text = L"Jugar";
 			this->PlayBtn->UseVisualStyleBackColor = false;
+			// 
+			// HelpBtn
+			// 
 			this->HelpBtn->BackColor = System::Drawing::Color::LemonChiffon;
-			this->HelpBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->HelpBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->HelpBtn->Location = System::Drawing::Point(261, 396);
 			this->HelpBtn->Name = L"HelpBtn";
@@ -107,8 +113,11 @@ namespace CppCLRWinFormsProject {
 			this->HelpBtn->UseVisualStyleBackColor = false;
 			this->HelpBtn->Click += gcnew System::EventHandler(this, &GatoGame::HelpBtn_Click);
 			this->HelpBtn->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &GatoGame::HelpBtn_MouseClick);
+			// 
+			// Tittle1
+			// 
 			this->Tittle1->AutoSize = true;
-			this->Tittle1->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 26.25, System::Drawing::FontStyle::Bold));
+			this->Tittle1->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 26.25F, System::Drawing::FontStyle::Bold));
 			this->Tittle1->ForeColor = System::Drawing::SystemColors::ButtonFace;
 			this->Tittle1->Location = System::Drawing::Point(176, 91);
 			this->Tittle1->Name = L"Tittle1";
@@ -116,8 +125,11 @@ namespace CppCLRWinFormsProject {
 			this->Tittle1->TabIndex = 2;
 			this->Tittle1->Text = L"Saludos!!!1";
 			this->Tittle1->Click += gcnew System::EventHandler(this, &GatoGame::label1_Click_1);
+			// 
+			// Tittle3
+			// 
 			this->Tittle3->AutoSize = true;
-			this->Tittle3->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 26.25, System::Drawing::FontStyle::Bold));
+			this->Tittle3->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 26.25F, System::Drawing::FontStyle::Bold));
 			this->Tittle3->ForeColor = System::Drawing::SystemColors::ButtonFace;
 			this->Tittle3->Location = System::Drawing::Point(174, 185);
 			this->Tittle3->Name = L"Tittle3";
@@ -125,8 +137,11 @@ namespace CppCLRWinFormsProject {
 			this->Tittle3->TabIndex = 4;
 			this->Tittle3->Text = L"GatoPerdidoFinder2000";
 			this->Tittle3->Click += gcnew System::EventHandler(this, &GatoGame::label3_Click);
+			// 
+			// Tittle2
+			// 
 			this->Tittle2->AutoSize = true;
-			this->Tittle2->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 26.25, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Tittle2->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 26.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Tittle2->ForeColor = System::Drawing::SystemColors::ButtonFace;
 			this->Tittle2->Location = System::Drawing::Point(354, 138);
@@ -135,8 +150,11 @@ namespace CppCLRWinFormsProject {
 			this->Tittle2->TabIndex = 5;
 			this->Tittle2->Text = L"Bienvenido a";
 			this->Tittle2->Click += gcnew System::EventHandler(this, &GatoGame::Tittle2_Click);
+			// 
+			// ExitBtn
+			// 
 			this->ExitBtn->BackColor = System::Drawing::Color::Tomato;
-			this->ExitBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->ExitBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->ExitBtn->Location = System::Drawing::Point(261, 466);
 			this->ExitBtn->Name = L"ExitBtn";
@@ -145,6 +163,9 @@ namespace CppCLRWinFormsProject {
 			this->ExitBtn->Text = L"Salir";
 			this->ExitBtn->UseVisualStyleBackColor = false;
 			this->ExitBtn->Click += gcnew System::EventHandler(this, &GatoGame::ExitBtn_Click);
+			// 
+			// Credits
+			// 
 			this->Credits->AutoSize = true;
 			this->Credits->Font = (gcnew System::Drawing::Font(L"Kristen ITC", 15, System::Drawing::FontStyle::Bold));
 			this->Credits->ForeColor = System::Drawing::SystemColors::ButtonFace;
@@ -154,6 +175,9 @@ namespace CppCLRWinFormsProject {
 			this->Credits->TabIndex = 7;
 			this->Credits->Text = L"Creado por: AstronautMarkus";
 			this->Credits->Click += gcnew System::EventHandler(this, &GatoGame::Credits_Click);
+			// 
+			// GatoGame
+			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Teal;
