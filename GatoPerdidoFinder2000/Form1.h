@@ -1,4 +1,5 @@
 #pragma once
+#include "MenuGame.h"
 
 
 namespace CppCLRWinFormsProject {
@@ -36,7 +37,7 @@ namespace CppCLRWinFormsProject {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ PlayBtn;
+
 	protected:
 
 	private: System::Windows::Forms::Button^ HelpBtn;
@@ -50,6 +51,9 @@ namespace CppCLRWinFormsProject {
 	private: System::Windows::Forms::Label^ Tittle2;
 	private: System::Windows::Forms::Button^ ExitBtn;
 	private: System::Windows::Forms::Label^ Credits;
+	private: System::Windows::Forms::Button^ PlayBtn;
+
+
 
 
 
@@ -79,26 +83,14 @@ namespace CppCLRWinFormsProject {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->PlayBtn = (gcnew System::Windows::Forms::Button());
 			this->HelpBtn = (gcnew System::Windows::Forms::Button());
 			this->Tittle1 = (gcnew System::Windows::Forms::Label());
 			this->Tittle3 = (gcnew System::Windows::Forms::Label());
 			this->Tittle2 = (gcnew System::Windows::Forms::Label());
 			this->ExitBtn = (gcnew System::Windows::Forms::Button());
 			this->Credits = (gcnew System::Windows::Forms::Label());
+			this->PlayBtn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
-			// 
-			// PlayBtn
-			// 
-			this->PlayBtn->BackColor = System::Drawing::SystemColors::Control;
-			this->PlayBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->PlayBtn->Location = System::Drawing::Point(261, 326);
-			this->PlayBtn->Name = L"PlayBtn";
-			this->PlayBtn->Size = System::Drawing::Size(270, 64);
-			this->PlayBtn->TabIndex = 0;
-			this->PlayBtn->Text = L"Jugar";
-			this->PlayBtn->UseVisualStyleBackColor = false;
 			// 
 			// HelpBtn
 			// 
@@ -175,6 +167,19 @@ namespace CppCLRWinFormsProject {
 			this->Credits->TabIndex = 7;
 			this->Credits->Text = L"Creado por: AstronautMarkus";
 			this->Credits->Click += gcnew System::EventHandler(this, &GatoGame::Credits_Click);
+			// 
+			// PlayBtn
+			// 
+			this->PlayBtn->BackColor = System::Drawing::SystemColors::Control;
+			this->PlayBtn->Font = (gcnew System::Drawing::Font(L"Roboto", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->PlayBtn->Location = System::Drawing::Point(261, 326);
+			this->PlayBtn->Name = L"PlayBtn";
+			this->PlayBtn->Size = System::Drawing::Size(270, 64);
+			this->PlayBtn->TabIndex = 0;
+			this->PlayBtn->Text = L"Jugar";
+			this->PlayBtn->UseVisualStyleBackColor = false;
+			this->PlayBtn->Click += gcnew System::EventHandler(this, &GatoGame::ExitBtn_Click);
 			// 
 			// GatoGame
 			// 
@@ -262,5 +267,14 @@ namespace CppCLRWinFormsProject {
 
 
 
-	};
+	private: System::Void PlayBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		GatoPerdidoFinder2000::MenuGame^ MenuGame = gcnew GatoPerdidoFinder2000::MenuGame();
+
+		this->Hide();
+
+		MenuGame->Show();
+
+	}
+};
 }
